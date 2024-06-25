@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: #F0F4F8;
+}
+
+main {
+    padding: 4.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#conteiner-form {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+
+}
+
+.description-cell {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#description {
+    min-height:  1rem;
+    max-height: 3.8rem;
+}
+
+#form-produto {
+    display: grid;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-produto label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#form-produto input,
+#form-produto select,
+#form-produto textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+#form-produto textarea {
+    resize: vertical;
+}
+
+#form-produto button {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+#form-produto button:hover {
+    background-color: #2980b9;
+}
+
+#container-table {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+table td {
+    border-top: 1px solid #ccc;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto excede o espaço disponível */
+    max-width: 300px; /* Limite máximo de largura para a célula */
+}
+
+.even-row {
+    background-color: rgba(185, 183, 180, 0.87); /* Cor de fundo para linhas pares */
+}
+
+.odd-row {
+    background-color: #fff; /* Cor de fundo para linhas ímpares */
+}
+
+.delete-button {
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.delete-button:focus {
+    outline: none;
+    box-shadow: 0 0 0.5rem #c0392b;
+}
+
+.show-more,
+.show-less {
+    color: #3498db;
+    cursor: pointer;
+}
+
+.show-more:hover,
+.show-less:hover {
+    text-decoration: underline;
+}
+
+
