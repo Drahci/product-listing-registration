@@ -23,9 +23,9 @@ function toCheck() {
 }
 
 function truncateDescription(description) {
-    const maxLength = 10; // Apenas os primeiros 10 caracteres visíveis na tabela
+    const maxLength = 20;
     if (description.length > maxLength) {
-        return `${description.slice(0, maxLength)}... <span class="show-more" onclick="expandDescription(this)">Ver Mais</span>`;
+        return `${description.slice(0, maxLength)}... <span class="show-more" onclick="expandDescription(this)">Ler Mais</span>`;
     }
     return description;
 }
@@ -34,7 +34,7 @@ function expandDescription(element) {
     const tr = element.closest('tr');
     const descriptionCell = tr.querySelector('.description-cell');
     const fullDescription = products.find(product => product.id === tr.dataset.productId).description;
-    descriptionCell.innerHTML = `${fullDescription} <span class="show-less" onclick="collapseDescription(this)">Ver Menos</span>`;
+    descriptionCell.innerHTML = `${fullDescription} <span class="show-less" onclick="collapseDescription(this)">Ler Menos</span>`;
 }
 
 function collapseDescription(element) {
@@ -97,3 +97,7 @@ function addProduct() {
     productRender();
     document.getElementById("form-produto").reset();
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    productRender();
+});

@@ -34,10 +34,11 @@ h2 {
 .description-cell {
     display: flex;
     flex-wrap: wrap;
+    border: none;
 }
 
 #description {
-    min-height:  1rem;
+    min-height: 1rem;
     max-height: 3.8rem;
 }
 
@@ -52,6 +53,7 @@ h2 {
 #form-produto label {
     display: block;
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 #form-produto input,
@@ -111,18 +113,23 @@ table th {
 
 table td {
     border-top: 1px solid #ccc;
-    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    white-space: nowrap;
+    /* Evita que o texto quebre em várias linhas */
     overflow: hidden;
-    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto excede o espaço disponível */
-    max-width: 300px; /* Limite máximo de largura para a célula */
+    text-overflow: ellipsis;
+    /* Adiciona reticências (...) quando o texto excede o espaço disponível */
+    max-width: 300px;
+    /* Limite máximo de largura para a célula */
 }
 
 .even-row {
-    background-color: rgba(185, 183, 180, 0.87); /* Cor de fundo para linhas pares */
+    background-color: rgba(185, 183, 180, 0.87);
+    /* Cor de fundo para linhas pares */
 }
 
 .odd-row {
-    background-color: #fff; /* Cor de fundo para linhas ímpares */
+    background-color: #fff;
+    /* Cor de fundo para linhas ímpares */
 }
 
 .delete-button {
@@ -155,5 +162,3 @@ table td {
 .show-less:hover {
     text-decoration: underline;
 }
-
-
